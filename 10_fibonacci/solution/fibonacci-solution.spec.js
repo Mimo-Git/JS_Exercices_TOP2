@@ -2,7 +2,7 @@ const fibonacci = require('./fibonacci-solution')
 
 describe('fibonacci', () => {
   test('4th fibonacci number is 3', () => {
-    expect(fibonacci(4)).toBe(3);
+    expect(fibonacci(4.79)).toBe(3);
   });
   test('6th fibonacci number is 8', () => {
     expect(fibonacci(6)).toBe(8);

@@ -1,4 +1,19 @@
-const palindromes = function () {
+const palindromes = function (str) {
+    let arr = [];
+    arr = str.split(/^[a-zA-Z0-9]+/);
+    let newStr;
+    for(let word of str){
+        newStr += word;
+    }
+    for (let letter of newStr){
+        arr.unshift(letter);
+    }
+    for(let letter of newStr){
+        if (letter.toLowerCase() !== arr.at(-(newStr.indexOf(letter))-1).toLowerCase())
+            return false;
+    }
+    return true;
+
 
 };
 
